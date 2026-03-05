@@ -1,6 +1,9 @@
 const express = require('express');
 const app=express();
+const notesRoutes =  require('./routes/notesRoutes');
 app.use(express.json());
+
+app.use('/notes',notesRoutes);
 
 app.get('/',(req,res)=>{
     res.send("Test run of notes API");
