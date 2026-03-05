@@ -20,5 +20,8 @@
   "homepage": "https://github.com/Adarsh5120u/Notes-API#readme",
   "dependencies": {
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
