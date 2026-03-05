@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Adarsh5120u/Notes-API/issues"
   },
-  "homepage": "https://github.com/Adarsh5120u/Notes-API#readme"
+  "homepage": "https://github.com/Adarsh5120u/Notes-API#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
