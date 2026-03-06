@@ -1,7 +1,7 @@
 let notes =[];  
 
 function getNotes(req,res){
-    res.send("Fetching all notes");
+    res.json(notes);
 }
 
 function createNotes(req,res){
