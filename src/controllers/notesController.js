@@ -1,4 +1,8 @@
 function getNotes(req,res){
     res.send("Fetching all notes");
 }
-module.exports={getNotes};
+
+function createNotes(req,res){
+    res.send('Creating a new note');
+}
+module.exports={getNotes,createNotes};
