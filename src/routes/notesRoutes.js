@@ -1,8 +1,7 @@
 const express = require('express');
+const notesController = require('../controllers/notesController');
 const router = express.Router();
 
-router.get('/',(req,res)=>{
-    res.send("Routes are working fine");
-});
+router.get('/',notesController.getNotes);
 
 module.exports=router;
