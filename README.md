@@ -1,7 +1,7 @@
-# Notes-API (Version 1)
+# Notes-API 
 A simple notes API Project
 
-*Main Functions:
+*Main Functions (Version 1):
 -Create Notes
 -Update Notes
 -Delete Notes
