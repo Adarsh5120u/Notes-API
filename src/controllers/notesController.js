@@ -19,4 +19,12 @@ function createNotes(req,res){
     notes.push(newNote);
     res.json(newNote);
 }
-module.exports={getNotes,createNotes,getNoteById};
+function updateNote(req,res){
+    const id=parseInt(req.params.id);
+    const note = notes.find(n=>n.id===id);
+    const {title,content} = req.body;
+    if(title){note.title=title;}
+    if(content){note.content=content;}
+    res.json(note);
+}
+module.exports={getNotes,createNotes,getNoteById,updateNote};
