@@ -23,6 +23,8 @@ function updateNote(req,res){
     const id=parseInt(req.params.id);
     const note = notes.find(n=>n.id===id);
     const {title,content} = req.body;
+    if(!note){return res.status(404).json("Note not found");}
+    
     if(title){note.title=title;}
     if(content){note.content=content;}
     res.json(note);
